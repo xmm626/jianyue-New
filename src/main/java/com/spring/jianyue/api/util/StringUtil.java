@@ -5,6 +5,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Base64;
 import java.util.Date;
+import java.util.Random;
 import java.util.UUID;
 
 public class StringUtil {
@@ -28,6 +29,20 @@ public class StringUtil {
     }
     public static String getUUIDString(){
         return UUID.randomUUID().toString();
+    }
+
+    /**
+     * 获取六位随机数短信验证码
+     *
+     * @return
+     */
+    public static String getVerifyCode() {
+        Random random = new Random();
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < 6; i++) {
+            stringBuilder.append(String.valueOf(random.nextInt(10)));
+        }
+        return stringBuilder.toString();
     }
 
     public static void main(String[] args) {

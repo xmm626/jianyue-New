@@ -1,10 +1,7 @@
 package com.spring.jianyue.api.mapper;
 
 import com.spring.jianyue.api.entity.User;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 public interface UserMapper {
     @Results({
@@ -35,5 +32,9 @@ public interface UserMapper {
     })
     @Select("SELECT * FROM t_user WHERE id = #{id} ")
     User getUserById(Integer userId);
+
+    @Insert("INSERT INTO t_user(mobile,password,nickname,status,regtime,avatar)" +
+            " VALUES(#{mobile},#{password},#{nickname},#{status},#{regtime},#{avatar}) ")
+    void insert(User user);
 
 }

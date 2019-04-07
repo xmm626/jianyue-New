@@ -29,6 +29,14 @@ public interface UserService {
      */
     int signIn(UserDTO userDTO);
 
+    /**
+     * 注册方法
+     *
+     * @param userDTO
+     * @return int
+     */
+    void signUp(UserDTO userDTO);
+
 
     /**
      * 修改头像方法

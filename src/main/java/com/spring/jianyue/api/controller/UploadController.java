@@ -15,11 +15,11 @@ import java.util.UUID;
 public class UploadController {
     @PostMapping("/avatar/upload")
     public String ossUpload(@RequestParam("file") MultipartFile sourceFile) {
-        String endpoint = "*****";
-        String accessKeyId = "***";
-        String accessKeySecret = "***";
-        String bucketName = "***";
-        String filedir = "***";
+        String endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        String accessKeyId = "LTAItn";
+        String accessKeySecret = "0sCY07Fxw2YhkgwMSC";
+        String bucketName = "xmm-soft";
+        String filedir = "avatar/";
         // 获取文件名
         String fileName = sourceFile.getOriginalFilename();
         // 获取文件后缀
