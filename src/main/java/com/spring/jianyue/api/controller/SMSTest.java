@@ -14,7 +14,7 @@ import com.aliyuncs.profile.DefaultProfile;
  */
 public class SMSTest {
     public static void main(String[] args) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-beijing", "LTAItnWmkZFrMtXz",  "0sCY07Fxw2YhkgwMSC6Fk2PdVoqxm7");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-beijing", "LTAIt",  "0sCY07Fxw2Yhkgw");
         IAcsClient client = new DefaultAcsClient(profile);
         CommonRequest request = new CommonRequest();
         request.setMethod(MethodType.POST);
@@ -22,9 +22,9 @@ public class SMSTest {
         request.setVersion("2017-05-25");
         request.setAction("SendSms");
         request.putQueryParameter("RegionId", "cn-beijing");
-        request.putQueryParameter("PhoneNumbers", "");
+        request.putQueryParameter("PhoneNumbers", "18851998898");
         request.putQueryParameter("SignName", "风寂川");
-        request.putQueryParameter("TemplateCode", "SMS_16273");
+        request.putQueryParameter("TemplateCode", "SMS_1627");
         request.putQueryParameter("TemplateParam", "{\"code\":\"888888\"}");
         try {
             CommonResponse response = client.getCommonResponse(request);

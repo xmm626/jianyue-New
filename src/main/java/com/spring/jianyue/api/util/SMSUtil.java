@@ -17,7 +17,7 @@ public class SMSUtil {
         DefaultProfile profile = DefaultProfile.getProfile(
                 "cn-beijing",
                 "LTAItnWm",
-                "0sCY07Fxw2YhkgwMSC6Fk");
+                "0sCY07Fxw2YhkgwMSC");
         IAcsClient client = new DefaultAcsClient(profile);
         CommonRequest request = new CommonRequest();
         request.setMethod(MethodType.POST);
@@ -27,7 +27,7 @@ public class SMSUtil {
         request.putQueryParameter("RegionId", "cn-beijing");
         request.putQueryParameter("PhoneNumbers", mobile);
         request.putQueryParameter("SignName", "风寂川");
-        request.putQueryParameter("TemplateCode", "SMS_1627");
+        request.putQueryParameter("TemplateCode", "SMS_162");
         String verifyCode = StringUtil.getVerifyCode();
         request.putQueryParameter("TemplateParam", "{\"code\":" + verifyCode + "}");
         try {
@@ -42,6 +42,6 @@ public class SMSUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(send("1885199"));
+        System.out.println(send("18851998898"));
     }
 }

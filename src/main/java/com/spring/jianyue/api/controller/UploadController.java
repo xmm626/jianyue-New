@@ -16,8 +16,8 @@ public class UploadController {
     @PostMapping("/avatar/upload")
     public String ossUpload(@RequestParam("file") MultipartFile sourceFile) {
         String endpoint = "http://oss-cn-beijing.aliyuncs.com";
-        String accessKeyId = "LTAItn";
-        String accessKeySecret = "0sCY07Fxw2YhkgwMSC";
+        String accessKeyId = "LTAItnWmk";
+        String accessKeySecret = "0sCY07Fxw2Y";
         String bucketName = "xmm-soft";
         String filedir = "avatar/";
         // 获取文件名
