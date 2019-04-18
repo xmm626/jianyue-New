@@ -15,8 +15,8 @@ public class AliOSSTest {
         // Endpoint以杭州为例，其它Region请按实际情况填写。
         String endpoint = "http://oss-cn-beijing.aliyuncs.com";
         // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高
-        String accessKeyId = "LTAItnWmkZFrMtXz";
-        String accessKeySecret = "0sCY07Fxw2YhkgwMSC6Fk2PdVoqxm7";
+        String accessKeyId = "****";
+        String accessKeySecret = "****";
         String bucketName = "xmm-soft";
         String filedir = "avatar/";
         String fileKey = "hello.jpg";

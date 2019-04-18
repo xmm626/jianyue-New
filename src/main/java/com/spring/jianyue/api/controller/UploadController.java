@@ -16,8 +16,8 @@ public class UploadController {
     @PostMapping("/avatar/upload")
     public String ossUpload(@RequestParam("file") MultipartFile sourceFile) {
         String endpoint = "http://oss-cn-beijing.aliyuncs.com";
-        String accessKeyId = "LTAItnWmkZFrMtXz";
-        String accessKeySecret = "0sCY07Fxw2YhkgwMSC6Fk2PdVoqxm7";
+        String accessKeyId = "*****";
+        String accessKeySecret = "*****";
         String bucketName = "xmm-soft";
         String filedir = "avatar/";
         // 获取文件名
@@ -48,8 +48,8 @@ public class UploadController {
     @PostMapping("/upload")
     public String ossUpload1(@RequestParam("file") MultipartFile sourceFile) {
         String endpoint = "http://oss-cn-beijing.aliyuncs.com";
-        String accessKeyId = "LTAItnWmkZFrMtXz";
-        String accessKeySecret = "0sCY07Fxw2YhkgwMSC6Fk2PdVoqxm7";
+        String accessKeyId = "*****";
+        String accessKeySecret = "****";
         String bucketName = "xmm-soft";
         String filedir = "avatar/";
         // 获取文件名
