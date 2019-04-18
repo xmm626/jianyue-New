@@ -7,4 +7,6 @@ import java.util.List;
 public interface ImgService {
     List<Img> selectImgsByAId(int aId);
 
+    void insertImg(Img img);
+
 }

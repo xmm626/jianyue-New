@@ -48,8 +48,8 @@ public class Controller {
     public String ossUpload(@RequestParam("file") MultipartFile sourceFile, @RequestParam("userId") int id) {
         System.out.println(id);
         String endpoint = "http://oss-cn-beijing.aliyuncs.com";
-        String accessKeyId = "LTAItn";
-        String accessKeySecret = "0sCY07Fxw2Y";
+        String accessKeyId = "LTAItnWmkZFrMtXz";
+        String accessKeySecret = "0sCY07Fxw2YhkgwMSC6Fk2PdVoqxm7";
         String bucketName = "xmm-soft";
         String filedir = "avatar/";
         // 获取文件名

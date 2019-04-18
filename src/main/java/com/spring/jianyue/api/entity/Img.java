@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class Img {
     private int id;
-    private int a_id;
+    private int aId;
     private String imgUrl;
 
     public int getId() {
@@ -16,12 +16,12 @@ public class Img {
         this.id = id;
     }
 
-    public int getA_id() {
-        return a_id;
+    public int getaId() {
+        return aId;
     }
 
-    public void setA_id(int a_id) {
-        this.a_id = a_id;
+    public void setaId(int aId) {
+        this.aId = aId;
     }
 
     public String getImgUrl() {

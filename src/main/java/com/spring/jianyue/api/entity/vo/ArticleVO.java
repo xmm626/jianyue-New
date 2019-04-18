@@ -1,5 +1,6 @@
 package com.spring.jianyue.api.entity.vo;
 
+import com.spring.jianyue.api.entity.Comment;
 import com.spring.jianyue.api.entity.Img;
 import lombok.Data;
 
@@ -16,6 +17,15 @@ public class ArticleVO {
     private String nickname;
     private String avatar;
     private List<Img> imgs;
+    private Integer comments;
+
+    public Integer getComments() {
+        return comments;
+    }
+
+    public void setComments(Integer comments) {
+        this.comments = comments;
+    }
 
     public Integer getId() {
         return id;

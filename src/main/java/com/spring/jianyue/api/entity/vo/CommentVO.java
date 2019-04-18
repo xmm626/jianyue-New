@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 @Data
 public class CommentVO {
-    private Integer Id;
+    private Integer id;
     private Integer uId;
     private Integer aId;
     private String content;
@@ -13,12 +13,13 @@ public class CommentVO {
     private String nickname;
     private String avatar;
 
+
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer id) {
-        Id = id;
+        this.id = id;
     }
 
     public Integer getuId() {

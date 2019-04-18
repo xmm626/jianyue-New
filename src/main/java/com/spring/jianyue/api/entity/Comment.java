@@ -6,10 +6,35 @@ import java.util.Date;
 @Data
 public class Comment {
     private int id;
-    private int u_id;
-    private int a_id;
+    private int uId;
+    private int aId;
     private String content;
-    private Date comment_time;
+    private Date commentTime;
+
+
+    public int getuId() {
+        return uId;
+    }
+
+    public void setuId(int uId) {
+        this.uId = uId;
+    }
+
+    public int getaId() {
+        return aId;
+    }
+
+    public void setaId(int aId) {
+        this.aId = aId;
+    }
+
+    public Date getCommentTime() {
+        return commentTime;
+    }
+
+    public void setCommentTime(Date commentTime) {
+        this.commentTime = commentTime;
+    }
 
     public int getId() {
         return id;
@@ -17,22 +42,6 @@ public class Comment {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getU_id() {
-        return u_id;
-    }
-
-    public void setU_id(int u_id) {
-        this.u_id = u_id;
-    }
-
-    public int getA_id() {
-        return a_id;
-    }
-
-    public void setA_id(int a_id) {
-        this.a_id = a_id;
     }
 
     public String getContent() {
@@ -43,11 +52,5 @@ public class Comment {
         this.content = content;
     }
 
-    public Date getComment_time() {
-        return comment_time;
-    }
 
-    public void setComment_time(Date comment_time) {
-        this.comment_time = comment_time;
-    }
 }
